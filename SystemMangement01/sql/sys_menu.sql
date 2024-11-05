@@ -1,0 +1,20 @@
+CREATE TABLE sys_menu (
+    menu_id BIGINT PRIMARY KEY COMMENT 'ID',
+    pid BIGINT COMMENT '上级菜单ID',
+    sub_count INT COMMENT '子菜单数目',
+    type INT COMMENT '菜单类型',
+    title VARCHAR(255) COMMENT '菜单标题',
+    name VARCHAR(255) COMMENT '组件名称',
+    component VARCHAR(255) COMMENT '组件',
+    menu_sort INT COMMENT '排序',
+    icon VARCHAR(255) COMMENT '图标',
+    path VARCHAR(255) COMMENT '链接地址',
+    i_frame BIT(1) COMMENT '是否外链',
+    cache BIT(1) COMMENT '缓存',
+    hidden BIT(1) COMMENT '隐藏',
+    permission VARCHAR(255) COMMENT '权限',
+    create_by VARCHAR(255) COMMENT '创建者',
+    update_by VARCHAR(255) COMMENT '更新者',
+    create_time DATETIME COMMENT '创建日期',
+    update_time DATETIME COMMENT '更新日期'
+);
